@@ -42,7 +42,8 @@ The project is a CLI-based Daily Expense Tracker built in Python. It uses modula
 - `analytics.py` - Report generation
 - `validators.py` - Input validation
 - `main.py` - Main menu driver with 5 choices
+- `test_basic.py`- Automatically checks if expense tracker code works correctly without bugs
 
 ## Technology Stack
 - Language: Python
-- Concepts Used: List, Tuple, Array, Loop, Functions, Modular Programming, CLI
+- Concepts Used: List, Tuple, Array, Loop, Functions, if -else-elif control statements, Modular Programming, CLI
