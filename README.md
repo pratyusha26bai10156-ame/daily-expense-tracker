@@ -15,8 +15,8 @@ This project is a simple, offline CLI-based Daily Expense Tracker developed in P
 
 ## Technologies / Tools Used
 - **Language:** Python 3
-- **Concepts Used:** List, Tuple (ALLOWED_CATEGORIES), Array, Loops, Functions, Modular Programming
-- **Modules:** expense.py, user_manager.py, storage.py, analytics.py, validators.py, main.py
+- **Concepts Used:** List, Tuple (ALLOWED_CATEGORIES), Array, Loops, Functions, if-else-elif control statements, Modular Programming
+- **Modules:** expense.py, user_manager.py, storage.py, analytics.py, validators.py, main.py,test_basic.py
 - **Tools:** VS Code, Python Terminal, GitHub, Vityarthi Portal
 
 ## Steps to Install & Run the Project
@@ -36,3 +36,25 @@ This project is a simple, offline CLI-based Daily Expense Tracker developed in P
 7.  Choose 5 - It should display Thank You banner and exit.
 
 ## Screenshots
+### Code Screenshots(8)
+### main.py
+<img width="1248" height="926" alt="Screenshot (240)" src="https://github.com/user-attachments/assets/e4b61de4-d708-4a32-b374-7f071e336be1" />
+<img width="1170" height="790" alt="Screenshot (241)" src="https://github.com/user-attachments/assets/8ff62d1d-a3be-4ea8-b54a-70c5e6834f9c" />
+# analytics.py
+<img width="1183" height="834" alt="Screenshot (242)" src="https://github.com/user-attachments/assets/21458928-1674-46b5-bf87-f79a59391523" />
+# expense.py
+<img width="1189" height="734" alt="Screenshot (243)" src="https://github.com/user-attachments/assets/71258721-cbae-4c6f-b9d4-3560ca7e5d50" />
+# storage.py
+<img width="1155" height="870" alt="Screenshot (244)" src="https://github.com/user-attachments/assets/502a26a9-d07f-4f5a-86cf-afb496d68eab" />
+# test_basic.py
+<img width="833" height="501" alt="Screenshot (246)" src="https://github.com/user-attachments/assets/d62829a8-66df-444e-ac47-7dd271bca312" />
+# user_manager.py
+<img width="883" height="555" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/fd896742-f513-4e69-aeb9-aef3d5209a52" />
+# validators.py
+<img width="887" height="564" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/71133135-3a45-4194-b7d4-de549aac604c" />
+### Output Screenshots(2)
+# Output 1: Add Expense and View All (Choice 1 ,2)
+<img width="1282" height="806" alt="Screenshot (238)" src="https://github.com/user-attachments/assets/a2ea97ae-cc6b-4645-ab98-649cdfe1c672" />
+# Output 2: Report, Array and Exit (Choice 3,4,5)
+<img width="1216" height="917" alt="Screenshot (239)" src="https://github.com/user-attachments/assets/37f42064-5eb7-48dd-8156-d030362662bb" />
+
