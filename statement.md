@@ -1,22 +1,48 @@
-## statement.md - Daily Expense Tracker
+# Daily Expense Tracker - Statement.md
 
 ## Problem Statement
-Many individuals struggle to track daily expenses manually, leading to overspending, lack of financial awareness, and poor budget planning. There is a need for a simple offline tool to log and analyze personal expenses.
+Many people fail to track their small daily expenses, which leads to overspending and lack of savings. There is a need for a simple, offline, modular system to log expenses and view spending habits.
 
-## Scope of the Project
-The scope of this project is to develop a CLI-based Daily Expense Tracker in Python. It will allow users to manage daily expenses offline with persistent storage in CSV format. The system includes adding, viewing, editing, deleting expenses and generating monthly and category-wise reports. Future scope includes GUI and budget alerts.
+## Project Scope
+The project is a CLI-based Daily Expense Tracker built in Python. It uses modular programming with separate files for expense handling, user management, storage, analytics, and validation. The data is handled using Lists and Arrays (Tuple for categories). No complex database or file handling needed for core logic.
 
 ## Target Users
-- Students who want to manage pocket money
-- Working professionals tracking personal finance
-- Families managing household budgets
-- Any individual seeking financial discipline
+- Students for managing pocket money
+- Individuals who want to control daily spending
+- Anyone who wants to build a savings habit
 
-## High-level Features
-- Add new expense with amount, category, date, description
-- View all expense history
-- Edit / Delete existing expenses
-- Monthly summary and analytics
-- Category-wise expense breakdown (Food, Travel, Bills, Shopping, etc.)
-- Persistent storage using CSV file
-- Offline CLI interface, no internet required
+## High-Level Features (Exactly as per main.py)
+
+1.  **Add Expense (ch == "1"):**
+    - Takes Title, Amount, Category as input
+    - Validates Amount using `validators.py`
+    - Validates Category using `ALLOWED_CATEGORIES` Tuple from `expense.py`
+    - Adds expense to storage
+
+2.  **View All Expenses (ch == "2"):**
+    - Displays all expenses as: `{i+1}. {e.title} - {e.amount} - {e.category}`
+
+3.  **View Report (ch == "3"):**
+    - Uses `Analytics(store.expenses)` from `analytics.py`
+    - Calls `analytics.report()` to show monthly/total report
+
+4.  **Show Amounts Array (ch == "4"):**
+    - Uses `store.get_amounts_array()` from `storage.py`
+    - Prints `Amounts Array: {arr}` for analysis purpose (Array implementation)
+
+5.  **Exit with Thank You Banner (ch == "5"):**
+    - Displays "DAILY EXPENSE TRACKER - Thank You!" banner
+    - Uses loop `for i in range(1, 6):` to print pattern `₹ * i + | {i*100} Saved!`
+    - Shows "Goodbye! Keep Tracking, Keep Saving!"
+
+## Modules Used 
+- `expense.py` - Expense class and ALLOWED_CATEGORIES Tuple
+- `user_manager.py` - User login
+- `storage.py` - Manages list of expenses and get_amounts_array()
+- `analytics.py` - Report generation
+- `validators.py` - Input validation
+- `main.py` - Main menu driver with 5 choices
+
+## Technology Stack
+- Language: Python
+- Concepts Used: List, Tuple, Array, Loop, Functions, Modular Programming, CLI
